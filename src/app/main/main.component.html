@@ -3,8 +3,14 @@
 
 <div (click)="handleSwitch()"  class="main">
   <div *ngFor="let pok of pokemon" class="container">
-    <img *ngIf="start" [src]="pok.sprites.front_shiny" alt="">
-    <img *ngIf="!start" [src]="pok.sprites.back_shiny" alt="">
+    <div class="images">
+      <img *ngIf="start" [src]="pok.sprites.front_default" alt="">
+      <img *ngIf="start" [src]="pok.sprites.front_shiny" alt="">
+    </div>
+    <div class="images">
+      <img *ngIf="!start" [src]="pok.sprites.back_default" alt="">
+      <img *ngIf="!start" [src]="pok.sprites.back_shiny" alt="">
+    </div>
     <p>{{pok.id}}</p>
     <p>{{pok.name | titlecase}}</p>
   </div>

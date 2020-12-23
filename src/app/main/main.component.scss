@@ -1,19 +1,20 @@
 .main {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 100px;
+    border: solid rgba(purple, 0.7) 2px;
+    width: 200px;
     height: 135px;
+    min-height: 135px;
 
     img {
-        // height: 100px;
-        width: 80%;
+        width: 49%;
     }
   }
 }
