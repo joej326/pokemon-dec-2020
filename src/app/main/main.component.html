@@ -1,0 +1,12 @@
+
+
+
+<div (click)="handleSwitch()"  class="main">
+  <div *ngFor="let pok of pokemon" class="container">
+    <img *ngIf="start" [src]="pok.sprites.front_shiny" alt="">
+    <img *ngIf="!start" [src]="pok.sprites.back_shiny" alt="">
+    <p>{{pok.id}}</p>
+    <p>{{pok.name | titlecase}}</p>
+  </div>
+</div>
+

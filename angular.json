@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "pokemon"
+  "defaultProject": "pokemon",
+  "cli": {
+    "analytics": "cb79ee50-c99f-4310-b46a-8eff331ff025"
+  }
 }
